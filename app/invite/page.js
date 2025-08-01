@@ -45,9 +45,9 @@ export default function InviteEntryPage() {
 					Please enter your invitation code below to RSVP.
 				</p>
 				<p className="text-gray-700 font-body text-center mb-6">
-					<strong>PS:</strong> If you're responding for you and a guest - or
-					your family - you'll be able to find the names and RSVP for your
-					entire group along the next pages.
+					<strong>PS:</strong> If you&apos;re responding for you and a guest -
+					or your family - you&apos;ll be able to find the names and RSVP for
+					your entire group along the next pages.
 				</p>
 
 				<p className="text-gray-700 font-body text-center mb-6">

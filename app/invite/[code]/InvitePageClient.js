@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Confetti from "react-confetti";
 import { useWindowSize } from "@react-hook/window-size";
 import { supabase } from "@/lib/supabaseClient";
@@ -115,12 +116,12 @@ export default function InvitePageClient({ code }) {
 					<p className="text-gray-700 font-body mb-6">
 						The invitation link you used is invalid.
 					</p>
-					<a
+					<Link
 						href="/"
 						className="bg-[#B76E79] hover:bg-[#d1848e] text-white font-body py-3 px-8 rounded-full text-lg transition-colors duration-300 shadow-md"
 					>
 						Go Back
-					</a>
+					</Link>
 				</div>
 			</div>
 		);
@@ -167,8 +168,8 @@ export default function InvitePageClient({ code }) {
 						Thank you for RSVPing! 🎉
 					</h2>
 					<p className="text-lg font-body text-gray-700 mb-8">
-						Bring your best dance moves and biggest smiles — it’s going to be
-						one unforgettable party!
+						Bring your best dance moves and biggest smiles — it&apos;s going to
+						be one unforgettable party!
 					</p>
 
 					<div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -186,12 +187,12 @@ export default function InvitePageClient({ code }) {
 							Download Invitation
 						</button>
 
-						<a
+						<Link
 							href="/"
 							className="bg-[#B76E79] hover:bg-[#d1848e] text-white font-body py-3 px-6 rounded-full text-lg transition-colors duration-300 shadow-md"
 						>
 							Back to Home
-						</a>
+						</Link>
 					</div>
 				</div>
 			</motion.div>
@@ -222,11 +223,11 @@ export default function InvitePageClient({ code }) {
 				{step === 1 && (
 					<>
 						<h2 className="text-2xl font-title text-rosegold mb-6 text-center">
-							Let's Party! 🏛️
+							Let&apos;s Party! 🏛️
 						</h2>
 
 						<p className="text-gray-700 font-body text-center mb-4">
-							We’re so excited to celebrate with you at the{" "}
+							We&apos;re so excited to celebrate with you at the{" "}
 							<strong>Holiday Inn Hotel, City Stars</strong> on{" "}
 							<strong>September 27th, 2025</strong> at <strong>6:00 PM</strong>.
 						</p>
@@ -242,13 +243,14 @@ export default function InvitePageClient({ code }) {
 
 						<p className="text-gray-700 font-body text-center mb-6">
 							Second thoughts or sudden excitement? You can swing back to this
-							link and make changes until <u>September 15th, 2025.</u> We won’t
-							judge, promise.
+							link and make changes until <u>September 15th, 2025.</u> We
+							won&apos;t judge, promise.
 						</p>
 
 						<p className="text-gray-700 font-body text-center mb-6">
-							Love doesn’t come with reminders… but our wedding does! Tap ‘Add
-							to Calendar’ so the day doesn’t sneak up on you!
+							Love doesn&apos;t come with reminders… but our wedding does! Tap
+							&apos;Add to Calendar&apos; so the day doesn&apos;t sneak up on
+							you!
 						</p>
 						<div className="flex justify-center mb-4">
 							<a
@@ -289,7 +291,8 @@ export default function InvitePageClient({ code }) {
 									className="w-5 h-5 text-rosegold focus:ring-rosegold rounded"
 								/>
 								<span className="text-sm font-body text-gray-700">
-									I’ve read all the details and let's make this memorable!
+									I&apos;ve read all the details and let&apos;s make this
+									memorable!
 								</span>
 							</label>
 						</div>
@@ -319,7 +322,7 @@ export default function InvitePageClient({ code }) {
 				{step === 2 && (
 					<>
 						<h2 className="text-2xl font-title text-rosegold mb-6 text-center">
-							Who’s joining the party? 🎉
+							Who&apos;s joining the party? 🎉
 						</h2>
 						<div className="flex flex-col gap-4">
 							{guests.map((guest) => (
