@@ -1,26 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+CUSTOM FONT CLASSES
+.font-title {
+  font-family: 'Playfair Display', serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.font-body {
+  font-family: 'Poppins', sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.text-rosegold {
+    color: #B76E79;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  /* .text-gray-700 {
+    color: #374151;
+  }
+  
+  .text-gray-800 {
+    color: #1F2937;
+  }
+  
+  .text-gray-600 {
+    color: #4B5563;
+  }
+  
+  .text-pink-500 {
+    color: #EC4899;
+  } */
+  
