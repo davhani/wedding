@@ -1,6 +1,7 @@
 "use client";
 import { supabase } from "@/lib/supabaseClient";
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function InviteEntryPage() {
@@ -77,12 +78,12 @@ export default function InviteEntryPage() {
 					</button>
 				</form>
 
-				<a
+				<Link
 					href="/"
 					className="inline-block mt-6 text-rosegold font-body underline"
 				>
 					Back to Home
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

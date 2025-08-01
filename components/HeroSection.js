@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const CountdownSection = dynamic(() => import("./CountdownSection"), {
 	ssr: false,
@@ -26,12 +27,12 @@ const HeroSection = () => {
 				<p className="text-lg md:text-xl font-body text-gray-700 mb-6">
 					September 27, 2025 • Cairo, Egypt
 				</p>
-				<a
+				<Link
 					href="./invite"
 					className="bg-[#B76E79] hover:bg-[#d1848e] text-white font-body py-3 px-8 rounded-full text-lg transition-colors duration-300 shadow-md mb-6"
 				>
 					Join the Celebration
-				</a>
+				</Link>
 
 				{/* Countdown Below Button */}
 				<CountdownSection />

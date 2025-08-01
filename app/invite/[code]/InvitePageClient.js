@@ -310,12 +310,12 @@ export default function InvitePageClient({ code }) {
 								Next
 							</button>
 						</div>
-						<a
+						<Link
 							href="/"
 							className="inline-block mt-6 text-rosegold font-body underline"
 						>
 							Back to Home
-						</a>
+						</Link>
 					</>
 				)}
 
