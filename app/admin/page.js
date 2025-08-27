@@ -50,7 +50,7 @@ export default function AdminPage() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		if (passcode === "dave123") setAuthenticated(true);
+		if (passcode === "DivoMarto1") setAuthenticated(true);
 		else setError("Incorrect passcode.");
 	};
 

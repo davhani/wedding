@@ -141,8 +141,6 @@ export default function InvitePageClient({ code }) {
 		return `${n.slice(0, -1).join(", ")} and ${n[n.length - 1]}`;
 	};
 
-	// Example salutation:
-	const salutation = `Dear ${formatNameList(displayNames(selectedGuests))}`;
 	if (isSubmitted) {
 		return (
 			<motion.div
